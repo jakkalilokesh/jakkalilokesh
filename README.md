@@ -69,16 +69,14 @@
 name       : Jakkali Lokesh
 handle     : @jakkalilokesh
 location   : Kurnool, Andhra Pradesh, India
-pronouns   : He / Him
 email      : jakkalilokesh@gmail.com
 portfolio  : https://jakkalilokesh.github.io/my_portfolio/
-education  : B.Tech CSE @ Rayalaseema University (2023–2026) · CGPA 7.7
 focus      : Cloud · DevOps · DevSecOps · Cybersecurity · SOC Analysis
 bounty     : $100 Bug Bounty on Udemy (Subdomain Takeover via HackerOne)
 mindset    : "Build Secure. Scale Fast. Break Things Ethically."
 ```
 
-A passionate **Cloud & DevSecOps Engineer** and **Cybersecurity Analyst** specialising in Blue Teaming, SOC Analysis, Threat Detection & Response, and Digital Forensics. Currently pursuing a B.Tech in Computer Science Engineering at Rayalaseema University.
+A passionate **Cloud & DevOps Engineer** and **Cybersecurity Analyst** specialising in Blue Teaming, SOC Analysis, Threat Detection & Response, and Digital Forensics.
 
 I design resilient cloud-native architectures on **AWS**, orchestrate containerised workloads with **Kubernetes & Docker**, and embed security at every layer of the software delivery lifecycle with **Terraform IaC**, **Jenkins**, and **GitHub Actions**.
 
