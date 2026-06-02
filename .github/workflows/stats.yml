@@ -5,47 +5,40 @@ on:
     - cron: "0 */6 * * *"   # runs every 6 hours
   push:
     branches: [main]
-  workflow_dispatch:         # run manually anytime
+  workflow_dispatch:         # run manually anytime from Actions tab
 
 jobs:
   generate-stats:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # ── Stats Card ──────────────────────────────────────────────
-      - name: Generate Stats Card
-        uses: anuraghazra/github-readme-stats@master
-        id: stats
-        with:
-          username: jakkalilokesh
-          # Outputs the SVG to a file
-        env:
-          PAT_1: ${{ secrets.STATS_TOKEN }}
-        continue-on-error: true
+      - name: Create profile folder
+        run: mkdir -p profile
 
-      # We use the direct API call approach — more reliable
-      - name: Download Stats SVG
+      - name: Download Stats Card SVG
         run: |
-          mkdir -p profile
-          curl -f -o profile/stats.svg \
+          curl -f --retry 3 --retry-delay 5 -o profile/stats.svg \
             "https://github-readme-stats.vercel.app/api?username=jakkalilokesh&show_icons=true&bg_color=0d1117&title_color=22c55e&icon_color=4ade80&text_color=c9d1d9&border_color=16a34a&border_radius=10&hide_border=false&count_private=true&include_all_commits=true" \
-            || echo "Stats fetch failed, keeping existing"
+            && echo "✅ stats.svg downloaded" \
+            || echo "⚠️ stats.svg fetch failed, skipping"
 
       - name: Download Top Languages SVG
         run: |
-          curl -f -o profile/top-langs.svg \
+          curl -f --retry 3 --retry-delay 5 -o profile/top-langs.svg \
             "https://github-readme-stats.vercel.app/api/top-langs/?username=jakkalilokesh&layout=compact&bg_color=0d1117&title_color=22c55e&text_color=c9d1d9&border_color=16a34a&border_radius=10&hide_border=false&langs_count=8" \
-            || echo "Langs fetch failed, keeping existing"
+            && echo "✅ top-langs.svg downloaded" \
+            || echo "⚠️ top-langs.svg fetch failed, skipping"
 
       - name: Download Streak SVG
         run: |
-          curl -f -o profile/streak.svg \
+          curl -f --retry 3 --retry-delay 5 -o profile/streak.svg \
             "https://streak-stats.demolab.com?user=jakkalilokesh&background=0d1117&ring=22c55e&fire=4ade80&currStreakLabel=22c55e&sideLabels=86efac&sideNums=c9d1d9&dates=4ade80&border=16a34a&border_radius=10&date_format=j%20M%5B%20Y%5D" \
-            || echo "Streak fetch failed, keeping existing"
+            && echo "✅ streak.svg downloaded" \
+            || echo "⚠️ streak.svg fetch failed, skipping"
 
       - name: Commit and push SVGs
         uses: stefanzweifel/git-auto-commit-action@v5
