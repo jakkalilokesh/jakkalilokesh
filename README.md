@@ -78,7 +78,7 @@ bounty     : $100 Bug Bounty on Udemy (Subdomain Takeover via HackerOne)
 mindset    : "Build Secure. Scale Fast. Break Things Ethically."
 ```
 
-A passionate **Cloud & DevOps Engineer** and **Cybersecurity Analyst** specialising in Blue Teaming, SOC Analysis, Threat Detection & Response, and Digital Forensics. Currently pursuing a B.Tech in Computer Science Engineering at Rayalaseema University.
+A passionate **Cloud & DevSecOps Engineer** and **Cybersecurity Analyst** specialising in Blue Teaming, SOC Analysis, Threat Detection & Response, and Digital Forensics. Currently pursuing a B.Tech in Computer Science Engineering at Rayalaseema University.
 
 I design resilient cloud-native architectures on **AWS**, orchestrate containerised workloads with **Kubernetes & Docker**, and embed security at every layer of the software delivery lifecycle with **Terraform IaC**, **Jenkins**, and **GitHub Actions**.
 
@@ -560,6 +560,10 @@ mindmap
 
 <!-- ═══════════════════════════════════════════════════════════════
   § 9  GITHUB ANALYTICS
+  ───────────────────────────────────────────────────────────────
+  Stats & Langs  → anuraghazra fork on vercel (most stable fork)
+  Streak         → streak-stats.demolab.com  (DemoLab, reliable)
+  Trophies       → ryo-ma official on vercel
 ═══════════════════════════════════════════════════════════════ -->
 
 <div align="center">
@@ -569,22 +573,24 @@ mindmap
 <br/>
 
 <img width="49%"
-  src="https://github-readme-stats.vercel.app/api?username=jakkalilokesh&show_icons=true&theme=tokyonight&bg_color=0d1117&title_color=22c55e&icon_color=4ade80&text_color=c9d1d9&border_color=16a34a&border_radius=10"
+  src="https://github-readme-stats.vercel.app/api?username=jakkalilokesh&show_icons=true&bg_color=0d1117&title_color=22c55e&icon_color=4ade80&text_color=c9d1d9&border_color=16a34a&border_radius=10&hide_border=false&count_private=true&include_all_commits=true"
   alt="GitHub Stats" />
 <img width="49%"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=jakkalilokesh&layout=compact&theme=tokyonight&bg_color=0d1117&title_color=22c55e&text_color=c9d1d9&border_color=16a34a&border_radius=10&langs_count=8"
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=jakkalilokesh&layout=compact&bg_color=0d1117&title_color=22c55e&text_color=c9d1d9&border_color=16a34a&border_radius=10&hide_border=false&langs_count=8"
   alt="Top Languages" />
 
 <br/><br/>
 
+<!-- DemoLab streak — same team as readme-typing-svg, very reliable -->
 <img width="80%"
-  src="https://github-readme-streak-stats.herokuapp.com?user=jakkalilokesh&theme=tokyonight&background=0d1117&ring=22c55e&fire=4ade80&currStreakLabel=22c55e&border=16a34a&border_radius=10"
+  src="https://streak-stats.demolab.com?user=jakkalilokesh&theme=dark&background=0d1117&ring=22c55e&fire=4ade80&currStreakLabel=22c55e&sideLabels=86efac&sideNums=c9d1d9&dates=4ade80&border=16a34a&border_radius=10&date_format=j%20M%5B%20Y%5D"
   alt="GitHub Streak" />
 
 <br/><br/>
 
+<!-- Official ryo-ma trophy — github-profile-trophy.vercel.app -->
 <img width="100%"
-  src="https://github-profile-trophy.vercel.app/?username=jakkalilokesh&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=6"
+  src="https://github-profile-trophy.vercel.app/?username=jakkalilokesh&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=6&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C"
   alt="GitHub Trophies" />
 
 </div>
